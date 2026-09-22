@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speech Enhancement Demo</title>
+<style>
+  body {
+    margin: 0;
+    background: #f5f7fb;
+    color: #1f2937;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 20px 72px;
+  }
+  h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+  }
+  .subtitle {
+    margin: 0 0 30px;
+    color: #6b7280;
+    line-height: 1.6;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 20px;
+    margin: 16px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,.03);
+  }
+  .topline {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: baseline;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 0 0 6px;
+  }
+  .meta, .filename {
+    color: #6b7280;
+    font-size: 14px;
+  }
+  .filename {
+    margin-bottom: 14px;
+    word-break: break-all;
+  }
+  audio {
+    width: 100%;
+  }
+  .footer {
+    margin-top: 30px;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Speech Enhancement Demo</h1>
+    <p class="subtitle">
+      Temporary GitHub Pages test page. The labels are intentionally generic for now;
+      this version is only for testing audio playback and the publishing workflow.
+    </p>
+
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 1</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_-5_2_mix(2).wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_1.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 2</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_-5_2_mix(4).wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_2.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 3</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_-5_2_mix(3).wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_3.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 4</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_5_2_mix.wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_4.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 5</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_-5_2_mix(5).wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_5.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+    <div class="card">
+      <div class="topline">
+        <h2>Audio 6</h2>
+        <span class="meta">16 kHz · 5.24 s</span>
+      </div>
+      <div class="filename">S_0000_-5_2_clean.wav</div>
+      <audio controls preload="metadata">
+        <source src="audio/audio_6.wav" type="audio/wav">
+        Your browser does not support WAV playback.
+      </audio>
+    </div>
+    
+
+    <div class="footer">
+      Later, these cards can be reorganized into Noisy / IRM / Unguided Stage 1 /
+      IRM-guided Stage 1 / Full System / Clean comparisons.
+    </div>
+  </div>
+</body>
+</html>
